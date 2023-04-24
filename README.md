@@ -1,2 +1,3 @@
-# endlessend
-A Journey to the end of universe or not.
+# enless_end
+
+A new Flutter project.
