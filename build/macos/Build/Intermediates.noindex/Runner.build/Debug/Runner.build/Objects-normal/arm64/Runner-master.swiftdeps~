@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
-options: "94322e5ff8943aeb07b2f4c7806b86ed90f9e9fba9bbe83e6a4b9414a39d4eab"
-build_start_time: [1682121386, 838917000]
-build_end_time: [1682121386, 869517000]
-inputs:
-  "/Users/slarrauri/Projects/Dart And Flutter/Proyectos/enless_end/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1682121377, 206576007]
-  "/Users/slarrauri/Projects/Dart And Flutter/Proyectos/enless_end/macos/Runner/AppDelegate.swift": !private [1680713952, 0]
-  "/Users/slarrauri/Projects/Dart And Flutter/Proyectos/enless_end/macos/Runner/MainFlutterWindow.swift": !private [1680713952, 0]
