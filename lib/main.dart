@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:enless_end/theme_app.dart';
 import 'package:flutter/material.dart';
 
@@ -30,6 +32,7 @@ class _EndlessEndState extends State<EndlessEnd> {
   int _clicks = 0;
   int _years = 2023;
   int _incrementValue = 1;
+  int _yearsAdvanced = 0;
 
   String event = 'ERA DEL ANTROPOCENO';
   @override
@@ -71,12 +74,17 @@ class _EndlessEndState extends State<EndlessEnd> {
         child: ElevatedButton(
           child: const Text('¡A DARLE ÁTOMOS!'),
           onPressed: () {
-            setState(() {
-              _clicks++;
-              if (_clicks % 5 == 0) {
-                _incrementValue++;
-              }
-              _years = _years + _incrementValue;
+            Timer.periodic(const Duration(milliseconds: 10), (timer) {
+              setState(() {
+                _clicks++;
+                if (_clicks % 5 == 0) {
+                  _incrementValue++;
+                }
+                _years = _years + _incrementValue;
+                _yearsAdvanced = _yearsAdvanced + _incrementValue;
+
+                print('$_clicks , $_incrementValue , $_yearsAdvanced');
+              });
             });
           },
         ),
